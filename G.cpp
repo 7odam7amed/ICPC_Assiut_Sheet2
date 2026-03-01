@@ -29,13 +29,20 @@ int CalculateFactorial(int x)
 
 void PrintFactorialTNumbers(int num)
 {
-    for(int j = 1; j <= num; j ++)
+    int AllFactorial[num];
+
+    for(int j = 0; j < num; j ++)
     {
         int Number = ReadNumber(0, 20);
 
         int Factorial = CalculateFactorial(Number);
 
-        cout << Factorial << endl;
+        AllFactorial[j] = Factorial;
+    }
+
+    for(int i = 0; i < num; i ++)
+    {
+        cout << AllFactorial[i] << endl;
     }
 }
 
