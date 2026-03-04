@@ -14,7 +14,7 @@ int ReadNumber()
 
 int ConvertToBinary(int num)
 {
-    int remaind, sum = 0;
+    int remaind, sum = 0, zero = 0;
 
     while(num > 0)
     {
@@ -90,7 +90,9 @@ void PrintDecimalOfOnesDecimal(int num)
 
 int main()
 {
-    PrintDecimalOfOnesDecimal(ReadNumber());
+    // PrintDecimalOfOnesDecimal(ReadNumber());
+
+    cout << ConvertToBinary(10);
 
     return 0;
 }
