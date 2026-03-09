@@ -8,13 +8,19 @@ int main()
 
     cin >> N;
 
+    bool found = false;
+
     for(int i = 2; i <= N; i++) 
     {
         if(i % 2 == 0)
         {
             cout << i << endl;
+            found = true;
         }
     }
+
+    if(!found)
+        cout << -1;
 
     return 0;
 }
